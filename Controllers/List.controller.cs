@@ -1,6 +1,8 @@
-﻿namespace UMS.Controllers
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace UMS.Controllers
 {
-    public class List
+    public class ListController : ControllerBase
     {
     }
 }

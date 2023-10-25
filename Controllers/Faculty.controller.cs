@@ -35,7 +35,7 @@ namespace UMS.Controllers
 
         [HttpGet]
         [ProducesResponseType(200, Type = typeof(Faculty[]))]
-        public async Task<IActionResult> GetAllFaculties()
+        public async Task<IActionResult> GetFaculties()
         {
             var faculties = await _db.Set<Faculty>().ToListAsync();
             return Ok(faculties);
